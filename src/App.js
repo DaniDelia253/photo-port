@@ -5,9 +5,6 @@ import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
 
 function App() {
-
-  const [contactSelected, setContactSelected] = useState(false);
-
   const [categories] = useState([
     {
       name: 'commercial',
@@ -17,7 +14,10 @@ function App() {
     { name: 'food', description: 'Delicious delicacies' },
     { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
   ]);
+
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
+
+  const [contactSelected, setContactSelected] = useState(false);
 
   return (
     <div>
